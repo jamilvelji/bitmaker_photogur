@@ -1,4 +1,4 @@
-<h1>Add a picture</h1>
+<h1 class="bottom-margin">Add a picture</h1>
 <%= form_for @picture do |form| %>
   <p>
     <%= form.label "artist" %><br/>
@@ -9,11 +9,11 @@
     <%= form.text_field "title" %>
   </p>
   <p>
-    <%= form.label "url" %><br />
+    <%= form.label "url", "URL" %><br />
     <%= form.text_field "url" %>
   </p>
   <p>
-    <%= form.submit "Save" %>
+    <%= form.submit "Save", :class => "btn btn-default" %>
   </p>
 <% end %>
-<%= link_to "Back to Pictures", pictures_url %>
+<%= link_to "Back", pictures_url, {:class => "btn btn-default"} %>

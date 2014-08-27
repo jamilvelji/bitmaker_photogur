@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.top-bottom-margin {
+  margin: 1.5em auto;
+}
+
+.bottom-margin {
+  margin-bottom: 1em;
+}
+
+.image-in-grid {
+  margin-bottom: 1em;
+}
+
+.logo-image {
+  margin: 0.5em auto;
+}

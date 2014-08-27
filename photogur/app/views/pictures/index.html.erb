@@ -1,8 +1,13 @@
-<h1>Pictures</h1>
-<%= link_to "Add a Picture", "/pictures/new" %>
+<div class="top-bottom-margin text-center">
+  <%= link_to "Add a Picture", "/pictures/new", {:class => "btn btn-default"} %>
+</div>
+<div class="row top-bottom-margin">
 <% @pictures.each do |picture| %>
-  <p>
-    <%= picture[:title] %>, <%= picture[:artist] %>
-  </p>
-  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+  <div class="col-md-12 image-in-grid text-center">
+    <h3><%= picture[:title] %></h3>
+    <p><%= picture[:artist] %></p>
+    <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+    <hr>
+  </div>
 <% end %>
+</div>
